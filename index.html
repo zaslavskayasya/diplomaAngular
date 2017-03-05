@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="BooksApp">
+<head>
+    <meta charset="utf-8" >
+
+    <title>BooksApp</title>
+
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.5.8/angular-route.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/controllers/MainPageController.js"></script>
+    <script src="./app/controllers/serchController.js"></script>
+    <script src="routs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="./app/services/api.js"></script>
+</head>
+<body>
+
+<div ng-controller="MainPageController as Main">
+
+    <div>
+        <div>
+            <button> <a  href="#/search">Find books</a></button>
+            <button>My list</button>
+            <button>The books a have read</button>
+        </div>
+    </div>
+</div>
+<div ng-view></div>
+
+
+</body>
+</html>

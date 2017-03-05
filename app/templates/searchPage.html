@@ -1,0 +1,15 @@
+<div ng-controller="searchController">
+    <p>this is search page</p>
+    <form>
+        <input type="text" ng-model="searchedName">
+        <button ng-click="searchIt(searchedName)">Find</button>
+        {{searchedName}}
+    </form>
+    <div ng-repeat="Result in searchResult">
+        <p>{{Result.Tytle}}</p>
+        <img ng-src="{{Result.Image}}">
+        <p>{{Result.ID}}</p>
+
+    </div>
+
+</div>
