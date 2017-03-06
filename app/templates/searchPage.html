@@ -5,10 +5,19 @@
         <button ng-click="searchIt(searchedName)">Find</button>
         {{searchedName}}
     </form>
+    <div >
+        <h4>this is list</h4>
+        <div ng-repeat="list in MyList">
+            <p>666</p>
+            <p> {{list.ID}}</p>
+        </div>
+
+    </div>
     <div ng-repeat="Result in searchResult">
-        <p>{{Result.Tytle}}</p>
+        <p>{{Result.Title}}</p>
         <img ng-src="{{Result.Image}}">
         <p>{{Result.ID}}</p>
+        <button ng-click="addToList(Result)">add to LIST</button>
 
     </div>
 

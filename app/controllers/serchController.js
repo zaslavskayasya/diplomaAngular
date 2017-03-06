@@ -6,9 +6,16 @@ app.controller('searchController',  function ($scope,  API) {
             console.log(dataB);
             $scope.searchResult = dataB;
             console.log(2);
-            alert('wow!')
         });
     };
-    $scope.searchResult = []
+
+    $scope.addToList = function (toList) {
+        $scope.MyList = toList;
+        console.log(toList);
+        console.log($scope.MyList)
+
+    };
+    $scope.searchResult = [];
+    $scope.MyList = [];
 
 });
